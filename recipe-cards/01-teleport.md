@@ -1,3 +1,4 @@
+![title cover](/images/covers/1.png)
 # Teleport
 
 Programming with Python on the Raspberry Pi is a powerful and fun way to modify Minecraft games. With a few lines of code you can take control of the player and the every block in the world.
