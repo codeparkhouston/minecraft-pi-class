@@ -1,3 +1,4 @@
+![title cover](/images/covers/5.png)
 # Freeze
 
 One of the benefits of programming is that it can automate decision making. This saves us time and allows us to create rules that our programs must follow.
