@@ -8,16 +8,13 @@ Before you begin you’ll need to create a new folder for your programs. You’l
 
 ## Setting Up
 
-1. **Switch on the Raspberry Pi:**
+**Switch on the Raspberry Pi:**
 
-    Switch on your Raspberry Pi. Wait until the computer asks for your username.
+    Turn on your Raspberry Pi. Wait until the computer asks for your username.
 
-    Type in `pi` for the username and `raspberry` for the password.
+    Type in "pi" for the username and "raspberry" for the password.
 
-    Now start the desktop environment by typing `startx`.
-
-
-1. **Create the Minecraft folder:**
+**Create the Minecraft folder:**
 
     Open the LXTerminal program, which can be found on your desktop or under the start menu.
 
