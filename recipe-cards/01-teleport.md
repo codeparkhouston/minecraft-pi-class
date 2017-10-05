@@ -14,41 +14,31 @@ Before you begin you’ll need to create a new folder for your programs. You’l
 
     Type in "pi" for the username and "raspberry" for the password.
 
-**Create the Minecraft folder:**
-
-    Open the LXTerminal program, which can be found on your desktop or under the start menu.
-
-    Type in the following commands precisely:
-
-    ```
-    mkdir -p Documents/minecraft
-    cd /Documents/minecraft
-    cp -r ~/mcpi/api/python/* .
-    ```
-
 1. **Open Minecraft:**
 
-    To open Minecraft Pi type in the following code into LXTerminal:
-
-    ```
-    cd ~/mcpi
-    ./minecraft-pi
-    ```
+    To open Minecraft Pi click on the Raspberry Pi start menu on the upper left hand corner. Go to Games -> Minecraft Pi.
 
     Start a game and create a new world.
 
     > **Alert:** Press tab in Minecraft to release the mouse
 
-1. **Open IDLE:**
+2. **Open Thonny:**
 
-    IDLE is used to run Python programs. Open IDLE using the icon on the desktop or under the programming section of the start menu.
+    Thonny is used to run Python programs. Go to your start menu again -> Programming -> Thonny (Simple Mode). In Thonny, click the "New" icon to start a blank file, then "Save" icon. Save your python file as "teleport" on your Desktop.
 
-    Click File > New Window, then in the new window File > Save As. Save the file as `teleport.py` in the `Documents/minecraft` directory.
+![save as screencap](/images/01-screen-caps/save-file-in-thonny.png)
 
-    Copy the Python code below into IDLE. Press F5 in IDLE to run it.
+    Type the Python code below into Thonny. Click the "Run" icon to run your code.
 
 ## Code
+```
+import mcpi.minecraft as minecraft
+mc = minecraft.Minecraft.create()
 
+x = 10
+y = 10
+z = 12
+```
 ### Import the API
 
 Every Minecraft Pi program that you write in Python requires these two lines of code. The first line imports the commands that allow you to interact with a Minecraft game using Python. The second line creates a connection to the game.
@@ -56,6 +46,7 @@ Every Minecraft Pi program that you write in Python requires these two lines of 
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
+
 ```
 
 ### Set the Variables
