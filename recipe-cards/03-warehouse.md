@@ -1,3 +1,4 @@
+![title cover](/images/covers/3.png)
 # Warehouse
 
 When you’re building in Minecraft you can spend ages on a relatively simple structure, such as the walls of your house.  Wouldn’t it be nice if you could save time? Well, you can do that with only a few lines of Python.

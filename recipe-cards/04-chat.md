@@ -1,3 +1,4 @@
+![title cover](/images/covers/4.png)
 # Chat
 
 Minecraft Pi Edition has many hidden features that you can only access using Python code. One of those hidden features is the chat feature.

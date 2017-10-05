@@ -1,3 +1,4 @@
+![title cover](/images/covers/2.png)
 # Flower Path
 
 With Python you can achieve things that aren’t normally possible in a Minecraft Pi game. In this exercise you’ll create a trail of flowers that follows the player wherever they go.

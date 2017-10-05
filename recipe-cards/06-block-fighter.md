@@ -1,3 +1,4 @@
+![title cover](/images/covers/6.png)
 # Block Fighter
 
 Using the Minecraft Pi API you can create your own mini-games. This means you can build upon the existing game to create your own ideas quickly without having to start from scratch.
