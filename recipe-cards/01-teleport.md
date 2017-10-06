@@ -47,32 +47,28 @@ Type the Python code below into Thonny. Click the "Run" icon to run your code.
 
 ## Code
 
+```
+import mcpi.minecraft as minecraft
+mc = minecraft.Minecraft.create()
+x = 10
+y = 50
+z = 12
+mc.player.setPos(x, y, z)
+```
+
 ### Import the API
 
 Every Minecraft Pi program that you write in Python requires these two lines of code. The first line imports the commands that allow you to interact with a Minecraft game using Python. The second line creates a connection to the game.
 
-```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
-```
 
 ### Set the Variables
 
 The player’s position in Minecraft is represented using coordinates. Here we have created three variables to represent the player’s position. A variable stores a value, in this case the variables `x`, `y` and `z` store the values `10`, `50` and `12` respectively.
 
-```
-x = 10
-y = 50
-z = 12
-```
 
 ### Teleport the player
 
 The last line teleports the player to a new position in the game. The `setPos()` function uses three number values, known as arguments, to change the player’s position. In this case we’re using the values of the `x`, `y` and `z` variables that we set earlier.
-
-```
-mc.player.setPos(x, y, z)
-```
 
 </div>
 
@@ -114,6 +110,7 @@ Change your code and make it do different things.
 </div>
 
 <div class="footer">
+----
 
 ![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
 

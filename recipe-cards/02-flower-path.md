@@ -16,51 +16,36 @@ This is the code that you always use to connect your code to a Minecraft Pi game
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
+import time
+while True:
+    pos = mc.player.getPos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
+    block = 38
+    mc.setBlock(x, y, z, block)
+    time.sleep(0.2)
 ```
 
 ### Import time
 
 This statement allows us to use time commands in our programs. For example we will use `time.sleep()` in our program which makes our program wait a number of seconds before continuing to the next line.
 
-```
-import time
-```
-
 ### While loop and get player position
 
 A `while` loop repeats a block of indented code. In this case it will repeat lines 5–11. The `True` part of the loop means that this loop will run forever until the user terminates the program with <kbd>ctrl</kbd>+<kbd>c</kbd>. Lines 5–8 find the player’s position and then stores it in the `x`, `y` and `z` variables.
-
-```
-while True:
-    pos = mc.player.getPos()
-    x = pos.x
-    y = pos.y
-    z = pos.z
-```
 
 ### Set the block type
 
 Every block type in the Minecraft world has an associated number. For example air is 0, lava is 12 and melon is 103. In order to place flowers we store the flower block’s number, 38 in the `block` variable.
 
-```
-    block = 38
-```
-
 ### Set the block
 
 The `setBlock()` function creates a block in the Minecraft world. It requires co-ordinates and a block type. Here the program is using the variables created on lines 6–9.
 
-```
-    mc.setBlock(x, y, z, block)
-```
-
 ### Slow the loop
 
 The last line of the loop contains `sleep()`, which makes the program wait 0.2 seconds before looping again. We do this so that the loop doesn’t work too quickly and use up too much processing power.
-
-```
-    time.sleep(0.2)
-```
 
 ## What you’ve learned
 

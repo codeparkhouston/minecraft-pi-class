@@ -11,52 +11,40 @@ By making small changes to the code you can change the effect of the program qui
 
 ### Import the API
 
-As usual we import the API and make a connection to the game. We also import `time`.
-
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 import time
-```
-
-### Start the loop and get the player’s position
-
-As we need to repeat the code constantly we use an infinite `while` loop. We slow down the speed that the loop repeats with `time.sleep()`. On line 6–9 we find out the player’s position and store it in the `x`, `y` and `z` variables.
-
-```
 while True:
     time.sleep(0.2)
     pos = mc.player.getPos()
     x = pos.x
     y = pos.y
     z = pos.z
+    blockBelow = mc.getBlock(x, y - 1, z)
+    water = 9
+    ice = 79
+    if blockBelow == water:
+        mc.setBlock(x, y - 1, z, ice)
 ```
+
+As usual we import the API and make a connection to the game. We also import `time`.
+
+### Start the loop and get the player’s position
+
+As we need to repeat the code constantly we use an infinite `while` loop. We slow down the speed that the loop repeats with `time.sleep()`. On lines 6–9 we find out the player’s position and store it in the `x`, `y` and `z` variables.
 
 ### Get the block below the player
 
 To find the type of a block in the Minecraft game we use the `getBlock()` function. It uses co-ordinates and returns the block’s type at those co-ordinates. To find the block below the player we subtract `1` from the `y` variable.
 
-```
-    blockBelow = mc.getBlock(x, y - 1, z)
-```
-
 ### Create block variables
 
 On lines 10–12 we create variables to store the block types of water and ice, which we will use later.
 
-```
-    water = 9
-    ice = 79
-```
-
 ### Check the block below the player
 
 To check the block below the player we use an `if` statement. An `if` statement only executes some code when something is true. In this case it checks whether the block below the player (stored in the blockBelow variable) is water. If the block below the player is water it will set the block below the player to ice.
-
-```
-    if blockBelow == water:
-        mc.setBlock(x, y - 1, z, ice)
-```
 
 ## What you’ve learned
 
