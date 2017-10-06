@@ -9,7 +9,7 @@ Your Raspberry Pi Computer Kit Includes:
 - Raspberry Pi Computer
 - microSD card and card reader
 - HDMI cable
-- keyboardand mice
+- keyboard and mice
 
 You will need to have your own TV or monitor to use with your Raspberry Pi.
 ## Step 1: Hook Up your Raspberry Pi
@@ -28,9 +28,15 @@ Finally, once everything is connected, go ahead and plug in your power adapter. 
 
 Use your pi as a computer!
 
-
-
 ## Step 3: Safely power off your Raspberry Pi Computer
+
+![How to Shut Down Your Pi](images/pi-setup/shutdown.png)
+
+After using your Raspberry Pi computer, you need to safely shut down. Click the Raspberry Pi icon on the upper hand corner, and select "Shutdown", and finally clicking "Shutdown".
+
+If you are disconnecting the power cord, make sure to wait until the green light next to the SD card turns off.
+
+
 ## Additional Resources
 
 - **Raspberry Pi Foundation** `https://www.raspberrypi.org/`
