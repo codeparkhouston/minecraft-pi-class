@@ -22,11 +22,17 @@ To use your Raspbrry Pi as a computer, you'll need to connect it to a keyboard, 
 
 First, make sure the MicroSD card is properly inserted in your Pi. Connect your HDMI cable to your Raspberry Pi and your monitor or your television, then connect your USB keyboard and mice.
 
-Finally, once everything is connected, go ahead and plug in your power adapter. The Raspberry Pi does not have a power switch, so once you connect the power adapter, it’ll turn on all by itself.
+Finally, once everything is connected, go ahead and plug in your power adapter. The Raspberry Pi does not have a power switch, so once you connect the power adapter, it’ll turn on by itself.
 
 ## Step 2: Use Your Computer!
+The Raspberry Pi computer runs an operating system called Raspbian. Try running some apps!
 
-Use your pi as a computer!
+Try Python Games and code Snake!
+![Try Python Games](images/pi-setup/python-games.png)
+
+
+Try Scratch!
+![Try Scratch](images/pi-setup/scratch.png)
 
 ## Step 3: Safely power off your Raspberry Pi Computer
 
@@ -39,9 +45,6 @@ If you are disconnecting the power cord, make sure to wait until the green light
 
 ## Additional Resources
 
-- **Raspberry Pi Foundation** `https://www.raspberrypi.org/`
-
-
-
-
-
+- **Raspberry Pi Foundation** - `https://www.raspberrypi.org/`
+- **Raspberry Pi Projects** - `https://projects.raspberrypi.org/`
+- **Code Park Houston** - `https://codeparkhouston.org/`
