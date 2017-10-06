@@ -9,7 +9,7 @@ Before you begin you’ll need to create and save a python program file. You’l
 
 ## Setting Up
 
-**Turn on the Raspberry Pi:**
+1. **Turn on the Raspberry Pi:**
 
     Turn on your Raspberry Pi. Wait until the computer asks for your username.
 
@@ -36,14 +36,7 @@ Before you begin you’ll need to create and save a python program file. You’l
 Type the Python code below into Thonny. Click the "Run" icon to run your code.
 
 ## Code
-```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
-x = 10
-y = 50
-z = 12
-mc.playr.setPos(x,y,z)
-```
+
 ### Import the API
 
 Every Minecraft Pi program that you write in Python requires these two lines of code. The first line imports the commands that allow you to interact with a Minecraft game using Python. The second line creates a connection to the game.
