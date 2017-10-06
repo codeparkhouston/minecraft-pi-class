@@ -10,6 +10,11 @@
 
   function renderMarkdownForElement(markdown, element) {
     element.innerHTML = marked(markdown);
+    var imageElements = element.querySelectorAll('img');
+
+    _.forEach(imageElements, function(imageElement) {
+      imageElement.src = window.location.origin + window.location.pathname + imageElement.getAttribute('src');
+    });
   }
 
   var renderMarkdown = _.partial(renderMarkdownForElement, _, document.getElementById('content'));
@@ -23,16 +28,9 @@
   }
 
   function index() {
-    console.info('asdf')
-
   }
 
   function initialize() {
-    var recipes = ['01-teleport', '02-flower-path', '03-warehouse', '04-chat', '05-freeze', '06-block-fighter'];
-    var recipesRoutes = _.map(recipes, function(recipe){
-      return './recipe-cards/' + recipe;
-    });
-
     page('/', index);
     page('/cards/:card', renderCard);
     page({hashbang: true});
