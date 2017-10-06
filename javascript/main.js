@@ -13,7 +13,7 @@
     var imageElements = element.querySelectorAll('img');
 
     _.forEach(imageElements, function(imageElement) {
-      imageElement.src = window.location.origin + window.location.pathname + imageElement.getAttribute('src');
+      imageElement.src = window.location.origin + window.location.pathname + _.trim(imageElement.getAttribute('src'), '..');
     });
   }
 
