@@ -24,3 +24,8 @@ pre, code, kbd, samp {
   max-width: 1020px;
   margin: auto;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}

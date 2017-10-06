@@ -1,3 +1,5 @@
+<div class="intro">
+
 ![title cover](/images/covers/1.png)
 # Teleport
 
@@ -6,6 +8,10 @@ Programming with Python on the Raspberry Pi is a powerful and fun way to modify 
 In this first worksheet you will use some basics of Python programming with Minecraft Pi. You’ll learn how to teleport the player to a new position on the map using variables in Python.
 
 Before you begin you’ll need to create and save a python program file. You’ll also need to copy the set of Minecraft instructions that allow Minecraft to connect to Python. The next page includes instructions that show you how to do this.
+
+</div>
+
+<div class="setting-up">
 
 ## Setting Up
 
@@ -34,6 +40,10 @@ Before you begin you’ll need to create and save a python program file. You’l
 ![save file screencap](/images/01-screen-caps/save-file-in-thonny.png)
 
 Type the Python code below into Thonny. Click the "Run" icon to run your code.
+
+</div>
+
+<div class="code">
 
 ## Code
 
@@ -64,6 +74,10 @@ The last line teleports the player to a new position in the game. The `setPos()`
 mc.player.setPos(x, y, z)
 ```
 
+</div>
+
+<div class="what-youve-learned">
+
 ## What you’ve learned
 
 ### Variable
@@ -86,6 +100,10 @@ Some functions need to be given data in order to work, this data is called an ar
 
 An **API** is a collection of pre-written functions that allow you to connect your Python code to another program. In this guide you have learned how to connect your Python programs to the Minecraft Pi API, which contains functions to control Minecraft Pi games.
 
+</div>
+
+<div class="extension">
+
 ## Your Turn!
 
 Change your code and make it do different things.
@@ -93,7 +111,9 @@ Change your code and make it do different things.
 -  What happens when you change the values of the `x`, `y` and `z` variables?
 - What happens when you one of the values of `x`, `y` and `z` variables to a negative number?
 
+</div>
 
+<div class="footer">
 
 ![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
 
@@ -102,3 +122,5 @@ Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Founda
 Minecraft is a registered trademark of Mojang.
 
 These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+</div>
