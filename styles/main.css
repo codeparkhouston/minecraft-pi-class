@@ -1,0 +1,31 @@
+body {
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Muli", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+pre, code, kbd, samp {
+  font-family: "Cousine", monospace;
+}
+
+#content {
+  max-width: 1020px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

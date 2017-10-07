@@ -9,52 +9,40 @@ Try adapting the code when you’re done. For example you could make your sword 
 
 ## Code
 
-### Import the API
-
-As usual we import the API and connect to the game.
-
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
-```
-
-### Wait a bit
-
-We wait for 60 seconds in order to give the player time to hit some blocks with a sword. The `points` variable will store the player’s score.
-
-```
 import time
 time.sleep(60)
 points = 0
-```
-
-### Record the block hits
-
-The `pollBlockHits()` function returns a list of block hits. A `list` contains several a values that can be stored using a single variable. This means you can store several values without needing a separate variable for each.
-
-```
 hits = mc.events.pollBlockHits()
-```
-
-### Loop through every block hit
-
-A `for` loop is a type of loop that repeats for each item in a `list`. In this case it loops through each item in the `hits` list and stores each value in the `hit` variable, one at a time. The code inside the loop gets the co-ordinates that the player hit and finds the block type at those co-ordinates. The value of the block type is then added to the `points` variable.
-
-```
 for hit in hits:
     x = hit.pos.x
     y = hit.pos.y
     z = hit.pos.z
     points = points + mc.getBlock(x, y, z)
+mc.postToChat(”You got ” + str(points) + ” points.”)
 ```
+
+### Import the API
+
+As usual we import the API and connect to the game.
+
+### Wait a bit
+
+We wait for 60 seconds in order to give the player time to hit some blocks with a sword. The `points` variable will store the player’s score.
+
+### Record the block hits
+
+The `pollBlockHits()` function returns a list of block hits. A `list` contains several a values that can be stored using a single variable. This means you can store several values without needing a separate variable for each.
+
+### Loop through every block hit
+
+A `for` loop is a type of loop that repeats for each item in a `list`. In this case it loops through each item in the `hits` list and stores each value in the `hit` variable, one at a time. The code inside the loop gets the co-ordinates that the player hit and finds the block type at those co-ordinates. The value of the block type is then added to the `points` variable.
 
 ### Post the points to the chat
 
 Once the for loop has ended we display the number of points that the player scored to chat in the Minecraft game.
-
-```
-mc.postToChat(”You got ” + str(points) + ” points.”)
-```
 
 ## What you’ve learned
 
@@ -64,7 +52,7 @@ A `list` is a datatype that can store several values. Think of it like a shoppin
 
 ### `pollBlockHits()`
 
-The `pollBlockHits()` function returns a list of all of the block hits that the player has made with a sword since the start of the program. The list contains co-ordinates of the blocks that the player has hit. Only right-clicks with a sword will be returned. The co-ordinates are accessed on lines 9–11.
+The `pollBlockHits()` function returns a list of all of the block hits that the player has made with a sword since the start of the program. The list contains co-ordinates of the blocks that the player has hit. Only right-clicks with a sword will be returned. The co-ordinates are accessed on lines 8-10.
 
 ### `for` loops
 

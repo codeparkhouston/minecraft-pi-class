@@ -1,3 +1,5 @@
+<div class="intro">
+
 ![title cover](/images/covers/1.png)
 # Teleport
 
@@ -7,9 +9,13 @@ In this first worksheet you will use some basics of Python programming with Mine
 
 Before you begin you’ll need to create and save a python program file. You’ll also need to copy the set of Minecraft instructions that allow Minecraft to connect to Python. The next page includes instructions that show you how to do this.
 
+</div>
+
+<div class="setting-up">
+
 ## Setting Up
 
-**Turn on the Raspberry Pi:**
+1. **Turn on the Raspberry Pi:**
 
     Turn on your Raspberry Pi. Wait until the computer asks for your username.
 
@@ -35,41 +41,38 @@ Before you begin you’ll need to create and save a python program file. You’l
 
 Type the Python code below into Thonny. Click the "Run" icon to run your code.
 
+</div>
+
+<div class="code">
+
 ## Code
+
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 x = 10
 y = 50
 z = 12
-mc.playr.setPos(x,y,z)
+mc.player.setPos(x, y, z)
 ```
+
 ### Import the API
 
 Every Minecraft Pi program that you write in Python requires these two lines of code. The first line imports the commands that allow you to interact with a Minecraft game using Python. The second line creates a connection to the game.
 
-```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
-```
 
 ### Set the Variables
 
 The player’s position in Minecraft is represented using coordinates. Here we have created three variables to represent the player’s position. A variable stores a value, in this case the variables `x`, `y` and `z` store the values `10`, `50` and `12` respectively.
 
-```
-x = 10
-y = 50
-z = 12
-```
 
 ### Teleport the player
 
 The last line teleports the player to a new position in the game. The `setPos()` function uses three number values, known as arguments, to change the player’s position. In this case we’re using the values of the `x`, `y` and `z` variables that we set earlier.
 
-```
-mc.player.setPos(x, y, z)
-```
+</div>
+
+<div class="what-youve-learned">
 
 ## What you’ve learned
 
@@ -93,6 +96,10 @@ Some functions need to be given data in order to work, this data is called an ar
 
 An **API** is a collection of pre-written functions that allow you to connect your Python code to another program. In this guide you have learned how to connect your Python programs to the Minecraft Pi API, which contains functions to control Minecraft Pi games.
 
+</div>
+
+<div class="extension">
+
 ## Your Turn!
 
 Change your code and make it do different things.
@@ -100,7 +107,11 @@ Change your code and make it do different things.
 -  What happens when you change the values of the `x`, `y` and `z` variables?
 - What happens when you one of the values of `x`, `y` and `z` variables to a negative number?
 
+</div>
 
+<div class="footer">
+
+----
 
 ![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
 
@@ -109,3 +120,5 @@ Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Founda
 Minecraft is a registered trademark of Mojang.
 
 These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+</div>

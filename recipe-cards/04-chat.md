@@ -9,46 +9,34 @@ This program works best if you’re playing over a network with other people. Ca
 
 ## Code
 
-### Import the API
-
-As usual we import the API and create a connection to the game.
-
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
+chatMsg = raw_input(”Enter a message: ”)
+while chatMsg != ”/exit”:
+    mc.postToChat(chatMsg)
+    chatMsg = raw_input(”Enter a message: ”)
 ```
+
+### Import the API
+
+As usual we import the API and create a connection to the game.
 
 ### Get the user input
 
 The `raw_input()` method takes user input from the command line. The string (text) inside the brackets is printed to the command line and whatever the user inputs is returned and stored in the `chatMsg` variable. When programming, a “string” is the correct term for text.
 
-```
-chatMsg = raw_input(”Enter a message: ”)
-```
-
 ### While loop with a condition
 
 Once again we’re using a while loop to repeat some code. The difference here is that the loop will only repeat if the value of the `chatMsg` variable is not equal to `”/exit”`. If the value of `chatMsg` is equal to `”/exit”`, the loop will no longer repeat and the program will finish.
-
-```
-while chatMsg != ”/exit”:
-```
 
 ### Post the message
 
 The `postToChat()` function displays a string (text) on the Minecraft Pi in-game chat. In this case we’re displaying the value of `chatMsg`.
 
-```
-    mc.postToChat(chatMsg)
-```
-
 ### Get another user message
 
 At the end of the loop we get the next chat message from the user and store it in the `chatMsg` variable. The code on line 3 is outside the loop therefore we need to write it again within the loop in order for our program to work properly.
-
-```
-    chatMsg = raw_input(”Enter a message: ”)
-```
 
 ## What you’ve learned
 

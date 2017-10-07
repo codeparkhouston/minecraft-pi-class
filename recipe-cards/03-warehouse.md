@@ -9,22 +9,11 @@ You can have loads of fun adapting this code. Come up with your own ideas and tr
 
 ## Code
 
-### Import the API and set variables
-
-As usual we import the API and connect to the game. The `block` and `air` variables store block types, which we will use later. Block type 4 is cobblestone.
-
 ```
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 block = 4
 air = 0
-```
-
-### Set variables
-
-The `x`, `y` and `z` variables represent the bottom left hand corner of a 3D rectangle, known as a cuboid. The variables `x2`, `y2` and `z2` add to the `x`, `y` and `z` variables and store the new values. The `+` operator is used for addition. Likewise `-` can be used for subtraction.
-
-```
 x = 10
 y = 11
 z = 12
@@ -32,23 +21,25 @@ z = 12
 x2 = x + 10
 y2 = y + 5
 z2 = z + 8
+mc.setBlocks(x, y, z, x2, y2, z2, block)
+mc.setBlocks(x + 1, y + 1, z + 1, x2 - 1, y2 - 1, z2 - 1, air)
 ```
+
+### Import the API and set variables
+
+As usual we import the API and connect to the game. The `block` and `air` variables store block types, which we will use later. Block type 4 is cobblestone.
+
+### Set variables
+
+The `x`, `y` and `z` variables represent the bottom left hand corner of a 3D rectangle, known as a cuboid. The variables `x2`, `y2` and `z2` add to the `x`, `y` and `z` variables and store the new values. The `+` operator is used for addition. Likewise `-` can be used for subtraction.
 
 ### Create blocks
 
 Similar to `setBlock()`, the `setBlocks()` function creates blocks in a Minecraft game. It creates a cuboid (3D rectangle) between two points. These points have been set using the variables that we created on lines 5–11. We also provide the block variable to say what type of blocks should be created in the cuboid.
 
-```
-mc.setBlocks(x, y, z, x2, y2, z2, block)
-```
-
 ### Create air blocks
 
 We once again call the `setBlocks` function. This time we use addition and subtraction to create a cuboid made of air within the cuboid we created on line 12. The `air` variable sets the cuboid to air, which effectively hollows the original cuboid, leaving a ceiling, floor and walls that are one block thick.
-
-```
-mc.setBlocks(x + 1, y + 1, z + 1, x2 - 1, y2 - 1, z2 - 1, air)
-```
 
 ## What you’ve learned
 
