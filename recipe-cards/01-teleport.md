@@ -110,6 +110,7 @@ Change your code and make it do different things.
 </div>
 
 <div class="footer">
+
 ----
 
 ![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
