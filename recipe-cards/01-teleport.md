@@ -1,7 +1,9 @@
 ![title cover](/images/covers/1.png)
 # Teleport
 
-Programming with Python on the Raspberry Pi is a powerful and fun way to modify Minecraft games. With a few lines of code you can take control of the player and the every block in the world.
+Programming with Python on the Raspberry Pi is a powerful and fun way to modify Minecraft games.
+
+With a few lines of code you can take control of the player and the every block in the world!
 
 In this first worksheet you will use some basics of Python programming with Minecraft Pi. You’ll learn how to teleport the player to a new position on the map using variables in Python.
 
@@ -99,8 +101,6 @@ Change your code and make it do different things.
 
 -  What happens when you change the values of the `x`, `y` and `z` variables?
 - What happens when you one of the values of `x`, `y` and `z` variables to a negative number?
-
-
 
 ![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
 
