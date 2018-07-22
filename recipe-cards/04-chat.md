@@ -1,3 +1,5 @@
+<div class="intro">
+
 ![title cover](/images/covers/4.png)
 
 # Chat
@@ -8,36 +10,69 @@ In this guide you’ll learn how to use strings in Python to create a chat progr
 
 This program works best if you’re playing over a network with other people. Can you work out how to add a user-name to the chat?
 
-## Code
+</div>
+<div class="recipe-code">
 
-```
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
-chatMsg = raw_input(”Enter a message: ”)
-while chatMsg != ”/exit”:
-    mc.postToChat(chatMsg)
-    chatMsg = raw_input(”Enter a message: ”)
-```
+# Code
+
+<div class="recipe-code-section">
 
 ### Import the API
 
 As usual we import the API and create a connection to the game.
 
+```py
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+```
+
+</div>
+<div class="recipe-code-section">
+
 ### Get the user input
 
 The `raw_input()` method takes user input from the command line. The string (text) inside the brackets is printed to the command line and whatever the user inputs is returned and stored in the `chatMsg` variable. When programming, a “string” is the correct term for text.
+
+```py
+chatMsg = raw_input("Enter a message: ")
+```
+
+</div>
+<div class="recipe-code-section">
 
 ### While loop with a condition
 
 Once again we’re using a while loop to repeat some code. The difference here is that the loop will only repeat if the value of the `chatMsg` variable is not equal to `”/exit”`. If the value of `chatMsg` is equal to `”/exit”`, the loop will no longer repeat and the program will finish.
 
+```py
+while chatMsg != "/exit":
+```
+
+</div>
+<div class="recipe-code-section">
+
 ### Post the message
 
 The `postToChat()` function displays a string (text) on the Minecraft Pi in-game chat. In this case we’re displaying the value of `chatMsg`.
 
+```py
+    mc.postToChat(chatMsg)
+```
+
+</div>
+<div class="recipe-code-section">
+
 ### Get another user message
 
 At the end of the loop we get the next chat message from the user and store it in the `chatMsg` variable. The code on line 3 is outside the loop therefore we need to write it again within the loop in order for our program to work properly.
+
+```py
+    chatMsg = raw_input("Enter a message: ")
+```
+</div>
+</div>
+<div class="summary">
+<div class="what-youve-learned">
 
 ## What you’ve learned
 
@@ -57,8 +92,15 @@ The not equal to comparator checks that two values are not the same. As long as 
 
 The `postToChat()` function takes a string as an argument and displays it on Minecraft’s chat.
 
+</div>
+
+<div class="extension">
+
 ## Extensions
 
 Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
 
 * Add a user name to the chat. Add an extra line before line 3 that uses `raw_input()` to ask the user’s name and store it in a `userName` variable. Then change `postToChat()` to `mc.postToChat(userName + ”: ” + chatMsg)`
+
+</div>
+</div>
