@@ -113,11 +113,11 @@ The `setBlock()` function in the Minecraft Pi API allows us to create blocks in 
 
 <div class="extension">
 
-## Extensions
+## Your Turn!
 
-Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-* Change the block type that is placed. To do this change the value of the `block` variable on line 9. Some examples include melons (value 103), gold (value 41) and water (value 8).
+- Change the block type that is placed. To do this change the value of the `block` variable on line 9. Some examples include melons (value 103), gold (value 41) and water (value 8).
 
 </div>
 </div>

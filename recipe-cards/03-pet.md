@@ -94,19 +94,19 @@ To make it look like our pet moves with us, we need to somehow remove the pet bl
 
 ### Math operators
 
-Addition, subtraction, multiplication and division are all possible in Python. Using them in Python allows you to change the values of variables or arguments. For example we used addition on lines 9–11 to add to the values of `x`, `y` and `z` and store the result in new variables. We also used addition and subtraction to modify the values of arguments on line 13.
+Addition, subtraction, multiplication and division are all possible in Python. Using them in Python allows you to change the values of variables or arguments. For example we used addition on lines 10 and 12 to add to the values of `x`.
 
 </div>
 
 <div class="extension">
 
-## Extensions
+## Your Turn!
 
-Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-* Can you change your pet from the gold block to lava?
-* Can you make your pet follow behind you?
-* Can you make your pet bigger or smaller by making it 3 blocks tall?
+- Can you change your pet from the gold block to lava?
+- Can you make your pet follow behind you?
+- Can you make your pet bigger or smaller by making it 3 blocks tall?
 
 </div>
 </div>

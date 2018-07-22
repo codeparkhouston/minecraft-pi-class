@@ -111,7 +111,7 @@ An **API** is a collection of pre-written functions that allow you to connect yo
 
 ## Your Turn!
 
-Change your code and make it do different things.
+Here are some ideas to change the code and extend your teleport code.
 
 - What happens when you change the values of the `x`, `y` and `z` variables?
 - What happens when you one of the values of `x`, `y` and `z` variables to a negative number?

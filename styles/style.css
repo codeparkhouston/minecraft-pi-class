@@ -5,6 +5,12 @@ body {
   justify-content: space-between;
 }
 
+p,
+li {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+
 .intro,
 .summary {
   flex: 1;
@@ -19,7 +25,7 @@ body {
   .summary,
   .intro {
     page-break-after: always !important;
-    min-height: 714px;
+    min-height: 740px;
   }
   .recipe-code {
     page-break-before: always !important;
@@ -152,6 +158,7 @@ body {
 
 .recipe-code > h1 {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .recipe-code-section {
@@ -162,15 +169,15 @@ body {
 
 .recipe-code-section > h3 {
   color: #A7A7A7;
-  flex: 1 1;
+  flex: 0.9 1;
 }
 
 .recipe-code-section > p {
-  flex: 2.87 0;
+  flex: 2.8 0;
 }
 
 .recipe-code-section > pre {
-  flex: 3.13 0;
+  flex: 3.3 0;
 }
 
 .recipe-code-section > p {

@@ -93,13 +93,12 @@ The `setBlocks()` function of the Minecraft Pi API creates a cuboid of blocks be
 </div>
 <div class="extension">
 
-## Extensions
+## Your Turn!
 
-Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-* Change the block types of the blocks being placed. A popular block type for the inside is lava (value 11) with an surrounding of glass (value 20).
-
-* Make a swimming pool. Change the values on the maths operators used in the `setBlocks()` function on line 13 so that there is no top roof created.
+- Change the block types of the blocks being placed. A popular block type for the inside is lava (value 11) with an surrounding of glass (value 20).
+- Make a swimming pool. Change the values on the maths operators used in the `setBlocks()` function on line 13 so that there is no top roof created.
 
 </div>
 </div>

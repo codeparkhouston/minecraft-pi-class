@@ -100,11 +100,11 @@ A `for` loop will repeat a section of code a number of times. In the example the
 </div>
 <div class="extension">
 
-## Extensions
+## Your Turn!
 
-Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-*  Make a magic wand. Rearrange the code so that every time the player hits a block with their sword, it is magically transformed into a rare block type.
+- Make a magic wand. Rearrange the code so that every time the player hits a block with their sword, it is magically transformed into a rare block type.
 
 </div>
 </div>

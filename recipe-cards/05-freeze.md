@@ -103,25 +103,12 @@ The equal to operator checks whether one value is the same as the other. If they
 
 <div class="extension">
 
-## Extensions
+## Your Turn!
 
-Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-* Change the block type that is changed. Try changing it to lava (block value `10`).
-
-* Check that the block below the player is not air (block value `0`). Use the not equal to operator (`!=`). This will mean that every block the player passes over, except air will be changed.
+- Change the block type that is changed. Try changing it to lava (block value `10`).
+- Check that the block below the player is not air (block value `0`). Use the not equal to operator (`!=`). This will mean that every block the player passes over, except air will be changed.
 
 </div>
 </div>
-
-<!-- ----
-
-![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
-
-For further exercises check out Python Programming with Minecraft Pi, the book available as a free pdf from [www.arghbox.wordpress.com](https://arghbox.wordpress.com/)
-
-Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation [http://www.raspberrypi.org](http://www.raspberrypi.org).
-
-Minecraft is a registered trademark of Mojang.
-
-These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/). -->

@@ -96,11 +96,11 @@ The `postToChat()` function takes a string as an argument and displays it on Min
 
 <div class="extension">
 
-## Extensions
+## Your Turn!
 
-Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-* Add a user name to the chat. Add an extra line before line 3 that uses `raw_input()` to ask the user’s name and store it in a `userName` variable. Then change `postToChat()` to `mc.postToChat(userName + ": " + chatMsg)`
+- Add a user name to the chat. Add an extra line before line 3 that uses `raw_input()` to ask the user’s name and store it in a `userName` variable. Then change `postToChat()` to `mc.postToChat(userName + ": " + chatMsg)`
 
 </div>
 </div>
