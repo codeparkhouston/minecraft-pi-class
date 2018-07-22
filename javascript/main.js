@@ -36,6 +36,11 @@
     _.forEach(codeBlockElements, function(codeBlockElement) {
       var lineCount = codeBlockElement.innerText.split('\n').length - 1;
 
+      if (lineCount > 7) {
+        lineStart = 1;
+        lineCount = 0;
+      }
+
       codeBlockElement.className = 'line-numbers';
       codeBlockElement.dataset.start = lineStart;
 

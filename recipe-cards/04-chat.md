@@ -1,4 +1,5 @@
 ![title cover](/images/covers/4.png)
+
 # Chat
 
 Minecraft Pi Edition has many hidden features that you can only access using Python code. One of those hidden features is the chat feature.
@@ -10,8 +11,8 @@ This program works best if you’re playing over a network with other people. Ca
 ## Code
 
 ```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
 chatMsg = raw_input(”Enter a message: ”)
 while chatMsg != ”/exit”:
     mc.postToChat(chatMsg)
@@ -61,15 +62,3 @@ The `postToChat()` function takes a string as an argument and displays it on Min
 Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
 
 * Add a user name to the chat. Add an extra line before line 3 that uses `raw_input()` to ask the user’s name and store it in a `userName` variable. Then change `postToChat()` to `mc.postToChat(userName + ”: ” + chatMsg)`
-
-----
-
-![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
-
-For further exercises check out Python Programming with Minecraft Pi, the book available as a free pdf from [www.arghbox.wordpress.com](https://arghbox.wordpress.com/)
-
-Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation [http://www.raspberrypi.org](http://www.raspberrypi.org).
-
-Minecraft is a registered trademark of Mojang.
-
-These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/).

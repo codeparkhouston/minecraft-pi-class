@@ -1,4 +1,7 @@
+<div class="intro">
+
 ![title cover](/images/covers/5.png)
+
 # Freeze
 
 One of the benefits of programming is that it can automate decision making. This saves us time and allows us to create rules that our programs must follow.
@@ -7,44 +10,80 @@ In this guide we’ll use Python code to freeze any blocks of water below the pl
 
 By making small changes to the code you can change the effect of the program quite drastically. For example you could make the program change grass to gold. Try coming up with your own ideas!
 
-## Code
+</div>
+
+<div class="recipe-code">
+
+# Code
+
+<div class="recipe-code-section">
 
 ### Import the API
 
-```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
+As usual we import the API and make a connection to the game. We also import `time`.
+
+```py
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
 import time
+```
+
+</div>
+<div class="recipe-code-section">
+
+### Start the loop and get the player’s position
+
+As we need to repeat the code constantly we use an infinite `while` loop. We slow down the speed that the loop repeats with `time.sleep()`. On lines 6–9 we find out the player’s position and store it in the `x`, `y` and `z` variables.
+
+```py
 while True:
     time.sleep(0.2)
     pos = mc.player.getPos()
     x = pos.x
     y = pos.y
     z = pos.z
-    blockBelow = mc.getBlock(x, y - 1, z)
-    water = 9
-    ice = 79
-    if blockBelow == water:
-        mc.setBlock(x, y - 1, z, ice)
 ```
 
-As usual we import the API and make a connection to the game. We also import `time`.
-
-### Start the loop and get the player’s position
-
-As we need to repeat the code constantly we use an infinite `while` loop. We slow down the speed that the loop repeats with `time.sleep()`. On lines 6–9 we find out the player’s position and store it in the `x`, `y` and `z` variables.
+</div>
+<div class="recipe-code-section">
 
 ### Get the block below the player
 
 To find the type of a block in the Minecraft game we use the `getBlock()` function. It uses co-ordinates and returns the block’s type at those co-ordinates. To find the block below the player we subtract `1` from the `y` variable.
 
+```py
+    blockBelow = mc.getBlock(x, y - 1, z)
+```
+
+</div>
+<div class="recipe-code-section">
+
 ### Create block variables
 
-On lines 10–12 we create variables to store the block types of water and ice, which we will use later.
+On lines 11–12 we create variables to store the block types of water and ice, which we will use later.
+
+```py
+    water = 9
+    ice = 79
+```
+
+</div>
+<div class="recipe-code-section">
 
 ### Check the block below the player
 
 To check the block below the player we use an `if` statement. An `if` statement only executes some code when something is true. In this case it checks whether the block below the player (stored in the blockBelow variable) is water. If the block below the player is water it will set the block below the player to ice.
+
+```py
+    if blockBelow == water:
+        mc.setBlock(x, y - 1, z, ice)
+```
+
+</div>
+</div>
+
+<div class="summary">
+<div class="what-youve-learned">
 
 ## What you’ve learned
 
@@ -60,6 +99,10 @@ An `if` statement will only run a section of code when a condition is `True`. Wh
 
 The equal to operator checks whether one value is the same as the other. If they are the same it will evaluate to `True`, if they are not it will evaluate to `False`. In our program we use an equal to operator with an `if` statement to check whether the block below the player is water.
 
+</div>
+
+<div class="extension">
+
 ## Extensions
 
 Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
@@ -68,7 +111,10 @@ Here are some suggestions to extend your code and make it do different things. E
 
 * Check that the block below the player is not air (block value `0`). Use the not equal to operator (`!=`). This will mean that every block the player passes over, except air will be changed.
 
-----
+</div>
+</div>
+
+<!-- ----
 
 ![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
 
@@ -78,4 +124,4 @@ Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Founda
 
 Minecraft is a registered trademark of Mojang.
 
-These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/). -->

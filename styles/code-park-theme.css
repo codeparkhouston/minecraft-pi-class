@@ -1,0 +1,17 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Muli', sans-serif;  
+}
+
+pre {
+  font-family: 'Source Code Pro', monospace;  
+}

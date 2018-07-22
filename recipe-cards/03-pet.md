@@ -1,56 +1,112 @@
-# Create Your Own Pet!
-You leveled up your python powers by creating a trail of flowers! Now we will learn how to make your own pet sidekick in all your adventures in Minecraft!
-## Code
+<div class="intro">
+
+![title cover](/images/covers/2.png)
+
+# Pet
+
+You leveled up your Python powers by creating a trail of flowers! Now we will learn how to make your own pet sidekick in all your adventures in Minecraft!
+
+</div>
+
+<div class="recipe-code">
+
+# Code
+
+<div class="recipe-code-section">
+
 ### Import the API
 
-This is the code that you always use to connect your code to a Minecraft Pi game.
+As usual we import the API and connect to the game.  We also import `time`.
 
-```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
-```
-
-### Import time
-
-This statement allows us to use time commands in our programs. For example we will use `time.sleep()` in our program which makes our program wait a number of seconds before continuing to the next line.
-
-```
+```py
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
 import time
 ```
-### `while` Loop
 
-A `while` loop repeats a section of Python code. The `True` part of the `while` loop means that it will repeat forever or until the user terminates the program.
+</div>
+<div class="recipe-code-section">
 
-### Set Block Type
-Every block in minecraft is associatd with a number. Number 41 is associated with a gold block.
-### Get Player position
-The `getPos()` function gives us the current position of the player in `x` `y` and `z` values.
-### Change value of x
-Now that we know the value of x, we are able going to change its value to set the position of your pet. `x=x+3` places the pet 3 block spaces beside the player.
-### Set the block pet
-With the changed x value, we are setting a block with the function `mc.setBlock(x, y, z, block)` in the position `x` `y` and `z` to the `block` number.
-### Slow the Loop
-The `sleep(0.01)` function makes our while loop wait 0.01 seconds before looping again
-### Reset the block
-The funciton `mc.setBlcok(x,y,z,0)` resets the block that was just placed beside your player to the block value `0` which corresponds to air.
+### Start the loop and get the player’s position
 
-```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
+As we need to repeat the code constantly we use an infinite `while` loop. On lines 6–9 we find out the player’s position and store it in the `x`, `y` and `z` variables.
 
-import time
-
+```py
 while True:
-    block = 41
-    x, y, z = mc.player.getPos()
-    x = x + 3
-
-    mc.setBlock(x, y, z, block)
-    time.sleep(0.01)
-    mc.setBlock(x, y, z, 0)
+    pos = mc.player.getPos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
 ```
-## Your turn!
 
-- Can you change your pet from the gold block to lava?
-- Can you make your pet follow behind you?
-- Can you make your pet bigger or smaller by making it 3 blocks tall?
+</div>
+<div class="recipe-code-section">
+
+### Set the block type
+
+Here, we set our block type for our pet.
+
+```py
+    block = 41
+```
+
+</div>
+<div class="recipe-code-section">
+
+### Place the pet block closeby
+
+To see our pet beside us, we set it close to our current position.  Before, the flower block was being placed in our `x`, `y` and `z`.  Now, we are placing the block to our side.  The `+` operator is used for addition. Likewise `-` can be used for subtraction.
+
+```py
+    mc.setBlock(x + 3, y, z, block)
+```
+
+</div>
+<div class="recipe-code-section">
+
+### Sleep
+
+Just like in the flower path code, we `sleep`.
+
+```py
+    time.sleep(0.01)
+```
+
+</div>
+<div class="recipe-code-section">
+
+### Remove the trail
+
+To make it look like our pet moves with us, we need to somehow remove the pet block from where it has been.  We can use an air block to cover up our pet's trail.
+
+```py
+    mc.setBlock(x + 3, y, z, 0)
+```
+
+</div>
+
+</div>
+
+<div class="summary">
+<div class="what-youve-learned">
+
+## What you’ve learned
+
+### Math operators
+
+Addition, subtraction, multiplication and division are all possible in Python. Using them in Python allows you to change the values of variables or arguments. For example we used addition on lines 9–11 to add to the values of `x`, `y` and `z` and store the result in new variables. We also used addition and subtraction to modify the values of arguments on line 13.
+
+</div>
+
+<div class="extension">
+
+## Extensions
+
+Here are some suggestions to extend your code and make it do different things. Even better if you come up with your own ideas.
+
+* Can you change your pet from the gold block to lava?
+* Can you make your pet follow behind you?
+* Can you make your pet bigger or smaller by making it 3 blocks tall?
+
+</div>
+</div>

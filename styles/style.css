@@ -1,0 +1,182 @@
+body {
+  -webkit-print-color-adjust: exact !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro,
+.summary {
+  flex: 1;
+}
+
+.summary {
+  order: 1;
+}
+
+@media print {
+
+  .summary,
+  .intro {
+    page-break-after: always !important;
+    min-height: 714px;
+  }
+  .recipe-code {
+    page-break-before: always !important;
+  }
+  pre,
+  blockquote {
+    page-break-inside: avoid !important;
+  }
+}
+
+.intro {
+  order: 2;
+}
+
+.setting-up {
+  order: 3;
+}
+
+.recipe-code {
+  order: 4;
+}
+
+.intro > p:first-child {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.intro > p:first-child img {
+  width: 100%;
+}
+
+.what-youve-learned h3::before {
+  display: block;
+  content: '';
+  margin-top: 1em;
+}
+
+.what-youve-learned h3,
+.what-youve-learned p {
+  font-size: 1em;
+  display: inline;
+}
+
+.what-youve-learned p > code {
+  background: #F8F8F8;
+  padding: 0 0.3em;
+  border: 1px solid #999999;
+  border-radius: 0.3em;
+}
+
+.summary {
+  padding-right: 3em;
+}
+
+.summary h2 {
+  margin-bottom: 0;
+}
+
+.summary > div > h3:first-of-type,
+.summary > div > p:first-of-type {
+  margin-top: 0;
+}
+
+.what-youve-learned p {
+  position: relative;
+  left: 1.5em;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.6em;
+  align-items: center;
+}
+
+.footer::before {
+  content: '';
+  width: 49.5px;
+  height: 62.5px;
+  background: url(/images/RPi-Logo-Reg-SCREEN-199x250.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 1em;
+}
+
+.footer div {
+  flex: 1;
+}
+
+.setting-up blockquote {
+  margin: 0;
+  background: pink;
+}
+
+.setting-up ol {
+  display: flex;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.setting-up li {
+  flex: 1;
+  padding-right: 3em;
+}
+
+.setting-up li p:first-child {
+  margin: 0;
+}
+
+.setting-up li p:nth-child(2) {
+  margin-top: 0;
+}
+
+.setting-up li p:last-child {
+  margin-bottom: 0;
+}
+
+.setting-up li:last-child {
+  padding-right: 0;
+}
+
+.setting-up li img {
+  width: 100%;
+  margin: auto;
+}
+
+.setting-up + .recipe-code > h1 {
+  margin-top: 0;
+}
+
+.recipe-code > h1 {
+  margin-bottom: 0;
+}
+
+.recipe-code-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipe-code-section > h3 {
+  color: #A7A7A7;
+  flex: 1 1;
+}
+
+.recipe-code-section > p {
+  flex: 2.87 0;
+}
+
+.recipe-code-section > pre {
+  flex: 3.13 0;
+}
+
+.recipe-code-section > p {
+  padding: 0 1em;
+}
+
+.recipe-code-section:last-child > * {
+  margin-bottom: 0;
+}

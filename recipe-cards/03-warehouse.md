@@ -1,4 +1,5 @@
 ![title cover](/images/covers/3.png)
+
 # Warehouse
 
 When you’re building in Minecraft you can spend ages on a relatively simple structure, such as the walls of your house.  Wouldn’t it be nice if you could save time? Well, you can do that with only a few lines of Python.
@@ -10,8 +11,8 @@ You can have loads of fun adapting this code. Come up with your own ideas and tr
 ## Code
 
 ```
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
 block = 4
 air = 0
 x = 10
@@ -58,15 +59,3 @@ Here are some suggestions to extend your code and make it do different things. E
 * Change the block types of the blocks being placed. A popular block type for the inside is lava (value 11) with an surrounding of glass (value 20).
 
 * Make a swimming pool. Change the values on the maths operators used in the `setBlocks()` function on line 13 so that there is no top roof created.
-
-----
-
-![Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation](../images/RPi-Logo-Reg-SCREEN-199x250.png)
-
-For further exercises check out Python Programming with Minecraft Pi, the book available as a free pdf from [www.arghbox.wordpress.com](https://arghbox.wordpress.com/)
-
-Raspberry Pi and the Raspberry Pi logo are trademarks of the Raspberry Pi Foundation [http://www.raspberrypi.org](http://www.raspberrypi.org).
-
-Minecraft is a registered trademark of Mojang.
-
-These resources are copyright Craig Richardson and licensed under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
