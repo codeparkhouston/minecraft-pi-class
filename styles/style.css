@@ -16,6 +16,10 @@ li {
   flex: 1;
 }
 
+pre {
+  font-weight: 600;
+}
+
 .summary {
   order: 1;
 }

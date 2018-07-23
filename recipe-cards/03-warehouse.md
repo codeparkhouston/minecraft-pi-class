@@ -84,7 +84,7 @@ mc.setBlocks(
 
 ### Maths operators
 
-Addition, subtraction, multiplication and division are all possible in Python. Using them in Python allows you to change the values of variables or arguments. For example we used addition on lines 9–11 to add to the values of `x`, `y` and `z` and store the result in new variables. We also used addition and subtraction to modify the values of arguments on line 13.
+Addition, subtraction, multiplication and division are all possible in Python. Using them in Python allows you to change the values of variables or arguments. For example we used addition on lines 9–11 to add to the values of `x`, `y` and `z` and store the result in new variables. We also used addition and subtraction to modify the values of arguments on lines 16-20.
 
 ### `setBlocks()`
 
@@ -98,7 +98,7 @@ The `setBlocks()` function of the Minecraft Pi API creates a cuboid of blocks be
 Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
 - Change the block types of the blocks being placed. A popular block type for the inside is lava (value 11) with an surrounding of glass (value 20).
-- Make a swimming pool. Change the values on the maths operators used in the `setBlocks()` function on line 13 so that there is no top roof created.
+- Make a swimming pool. Change the values on the maths operators used in the `setBlocks()` function on lines 16-20 so that there is no top roof created.
 
 </div>
 </div>

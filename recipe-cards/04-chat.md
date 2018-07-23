@@ -31,10 +31,10 @@ mc = Minecraft.create()
 
 ### Get the user input
 
-The `raw_input()` method takes user input from the command line. The string (text) inside the brackets is printed to the command line and whatever the user inputs is returned and stored in the `chatMsg` variable. When programming, a “string" is the correct term for text.
+The `input()` method takes user input from the command line. The string (text) inside the brackets is printed to the command line and whatever the user inputs is returned and stored in the `chatMsg` variable. When programming, a “string" is the correct term for text.
 
 ```py
-chatMsg = raw_input("Enter a message: ")
+chatMsg = input("Enter a message: ")
 ```
 
 </div>
@@ -67,7 +67,7 @@ The `postToChat()` function displays a string (text) on the Minecraft Pi in-game
 At the end of the loop we get the next chat message from the user and store it in the `chatMsg` variable. The code on line 3 is outside the loop therefore we need to write it again within the loop in order for our program to work properly.
 
 ```py
-    chatMsg = raw_input("Enter a message: ")
+    chatMsg = input("Enter a message: ")
 ```
 </div>
 </div>
@@ -76,9 +76,9 @@ At the end of the loop we get the next chat message from the user and store it i
 
 ## What you’ve learned
 
-### `raw_input()`
+### `input()`
 
-The `raw_input()` function in Python allows the user to input strings (text). The string is then stored in a variable and can be reused in the rest of the program. For example in our program we created a variable called `chatMsg`.
+The `input()` function in Python allows the user to input strings (text). The string is then stored in a variable and can be reused in the rest of the program. For example in our program we created a variable called `chatMsg`.
 
 ### Strings
 
@@ -100,7 +100,7 @@ The `postToChat()` function takes a string as an argument and displays it on Min
 
 Here are some suggestions to extend your code and make it do different things. Try anything you think of too!
 
-- Add a user name to the chat. Add an extra line before line 3 that uses `raw_input()` to ask the user’s name and store it in a `userName` variable. Then change `postToChat()` to `mc.postToChat(userName + ": " + chatMsg)`
+- Add a user name to the chat. Add an extra line before line 3 that uses `input()` to ask the user’s name and store it in a `userName` variable. Then change `postToChat()` to `mc.postToChat(userName + ": " + chatMsg)`
 
 </div>
 </div>

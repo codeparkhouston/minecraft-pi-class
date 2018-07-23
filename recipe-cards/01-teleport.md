@@ -36,7 +36,7 @@ Before you begin you’ll need to create and save a Python program file. You’l
 
     In Thonny, click the "New" icon to start a blank file, then "Save" icon.
 
-    Save your python file as "teleport" on your Desktop.
+    Save your file as "teleport.py" on your Desktop.
 
     Type the Python code below into Thonny. Click the "Run" icon to run your code.
 
